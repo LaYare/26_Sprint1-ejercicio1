@@ -1,0 +1,65 @@
+/* Inserta tu codigo aqui */
+*{
+	font-family: 'Courgette', cursive !important;
+	color: #FFFFFF !important;
+}
+body{
+	background-color: #3E3E3E!important;
+}
+.mgt{
+	margin-top: 3%;
+}
+.subti,.negro,header{
+	background-color: #151515;
+}
+li{
+	list-style: none;
+	display: inline-block;
+	color: #FFFFFF;
+	margin-left: 3%;
+	margin-top: 12%;
+}
+a{
+	text-decoration: none !important;
+	color: white !important;
+}
+a:hover{
+	color: aqua !important;
+}
+.flores{
+	background-image: url("../image/header-image.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/*arreglar que el parrafo se sale cuando se hace responsive*/
+.titu{
+	color: #E0A403 !important;
+	font-size: 500%;
+	width: 50%;
+	text-align: center;
+	margin-top: 8%;
+	margin-left: 25%;
+	margin-bottom: 8%;
+}
+.blanco{
+	color: white;
+	font-size: 20%;
+}
+.subti{
+	color: #E0A403 !important;
+	font-size: 150%;
+	text-align: center;
+	padding: 5%
+}
+.tam{
+	font-size: 60%;
+}
+/* Responsive */
+
+@media screen and (max-width : 920px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
