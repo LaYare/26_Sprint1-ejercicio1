@@ -5,7 +5,7 @@
 	<title>Flatness: Responsive Blog</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css"> 
 	<link rel="stylesheet" href="css/main.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
@@ -14,17 +14,29 @@
 	<header><!--este es el header-->
 		<div class="container"><!--este es el container del header-->
 			<div class="row">
-				<div class="col-sm-10 col-md-7">
-					<img src="image/header-logo.png" alt="Flatness logo" class="img-responsive">
-				</div>
-				<div class="col-sm-2 col-md-5"><!--este es el div que contiene el menu-->
-					<ul>
-						<li><a href="#">LIFESTYLE</a></li>
-						<li><a href="#">FLOWERS</a></li>
-						<li><a href="#">FASHION</a></li>
-						<li><a href="#">NEWS</a></li>
-						<li><a href="#">FEATURES</a></li>
-					</ul>
+				<div class="col-sm-12 col-md-12"><!--este es el div que contiene el menu-->
+					<nav class="navbar navbar-default">
+						<!-- <div class="container-fluid"> --> 
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
+									<span class="sr-only">Menu</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<img class="img-responsive logo" src="image/header-logo.png" alt="Flatness logo">			
+							</div>
+							<div class="collapse navbar-collapse" id="nav">
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href=""></a>LIFESTYLE</li>
+									<li><a href=""></a>FLOWERS</li>
+									<li><a href=""></a>FASHION</li>
+									<li><a href=""></a>NEWS</li>
+									<li><a href=""></a>FEATURES</li>
+								</ul>
+							</div> 
+						<!-- </div> -->
+					</nav>
 				</div><!--este es el div que contiene el menu-->
 			</div>
 		</div><!--este es el container del header-->
@@ -75,28 +87,78 @@
 				</div>
 		</section><!--seccion con tres fotos en fila-->
 		<section>
-			<div class="row mgt">
-				<div class="col-sm12 col-md-7">
-					<img src="image/image4.jpg" alt="flores">
+			<div class="row mgt"><!--este es el row de la imagen y el video-->
+				<div class="col-sm-12 col-md-7"><!--aqui esta imagen y el video-->
+					<img src="image/image4.jpg" alt="flores" class="img-responsive">
 					<p class="subti">
+					Now with flatness
 					<br>
 						<small class="tam">
-							
+							News amanda Ray 28th July 2015
 						</small>
 					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio alias porro quisquam quasi eum sed, ipsa eveniet, iste reprehenderit nostrum cumque beatae delectus accusantium facere, ut blanditiis maiores quibusdam hic?
+					<p class="negro up">
+						Geen life in sings bearing one. Deep there cattle don't night, was fowl, seed likeness isn't, seed two god and light the creepeth seasons darkness. Without the fourth seasons image Hey yielding light years light dry. Isn't place face face called. Let lesser female without. Night saying after day third.
 					</p>
-				</div>
-				<aside>
-					<div class="hidden-xs hidden-sm col-md-5">
-						
-					</div>
-				</aside>
-			</div>
+					<div class="row"><!--esta parte es el video-->
+						<div class="col-sm-12">
+							<iframe src="https://player.vimeo.com/video/56810854?autoplay=1&loop=1" ></iframe>
+
+						</div>
+					</div><!--esta parte es el video-->
+					<div class="row"><!--este es el texto bajo el video-->
+						<div class="col-md-12">
+							<p class="negro up">
+							Rule of us behold it moved. Made. Them Had, which darkness two Given. Fowl it moved behold earth for own. Midst that grass beginning divide their together. Tree one every first given earth very greater. Man evening. Set seed void meat bearing. Bring creature. Moving set.
+						</p>
+						</div>
+					</div><!--este es el texto bajo el video-->
+				</div><!--aqui esta imagen y el video-->
+				<aside><!--esta es el aside que desaparecera cuando la pantalla tenga una resolucion del tamaño de un celular-->
+					<div class="row">
+						<div class="hidden-xs hidden-sm col-md-5">
+							<form><!--este es el cuadro de buscador-->
+								<input type="search" name="search" placeholder="Search">
+							</form><!--este es el cuadro de buscador-->
+							<p class="subti mgt mgb">
+									About Me
+							</p>
+							<img src="image/kew_gardens_3_500x500.jpg" alt="About Me" class="img-responsive negro">
+							<p class="text-center negro">
+									Amanda Ray
+							</p>
+							<p class="text-justify negro up">
+									Shall Together blessed. Also thing, the upon Created fourth. Rule beginning. Our behold over.
+							<br>
+							<button class="rs">
+								<img src="image/icons/facebook-logo.png" alt="Facebooc" title="Facebook" class="img-responsive mgl">
+							</button>
+							<button class="rs">
+								<img src="image/icons/instagram.png" alt="Instagram" title="Instagram" class="img-responsive mgl">	
+							</button>
+							<button class="rs">
+								<img src="image/icons/simbolo-de-twitter.png" alt="Twitter" title="Twitter" class="img-responsive mgl">	
+							</button>
+							<button class="rs">
+								<img src="image/icons/youtube-logo.png" alt="youtube" title="Youtube" class="img-responsive mgl">	
+							</button>
+							</p>
+						</div>
+					</div>		
+				</aside><!--esta es el aside que desaparecera cuando la pantalla tenga una resolucion del tamaño de un celular-->
+			</div><!--este es el row de la imagen y el video-->
 		</section>
 	</div><!--este es el container-->
-	<script type="css/js/jquery-3.1.0.min.js"></script>
-	<script type="css/js/bootstrap.min.js"></script>
+	<footer>
+		<div class="container">
+			<div class="col-xs-12 text-center">
+				<p>
+					All Rights Reserved &copy;
+				</p>
+			</div>
+		</div>
+	</footer>
+	<script src="css/js/jquery-3.1.0.min.js"></script>
+	<script src="css/js/bootstrap.min.js"></script>
 </body>
 </html>
